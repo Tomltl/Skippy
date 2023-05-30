@@ -93,6 +93,7 @@ const Skippy = () => {
                   <Text style={{color: 'white', fontWeight: '500', marginLeft: 15, fontSize: 20, marginTop: 5,}}>12€</Text>
                   </View>
               </View>
+              <Pressable onPress={() => navigation.navigate("Commande")}>
               <View style={styles.all}>
               <Image
                   style={styles.plat}
@@ -103,6 +104,7 @@ const Skippy = () => {
                   <Text style={{color: 'white', fontWeight: '500', marginLeft: 15, fontSize: 20, marginTop: 5,}}>12€</Text>
                   </View>
               </View>
+              </Pressable>
               <View style={styles.all}>
               <Image
                   style={styles.plat}

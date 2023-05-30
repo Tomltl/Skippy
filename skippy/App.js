@@ -19,6 +19,7 @@ import Festival from "./src/festival"
 import Skippy from './src/skippy';
 import Attente from './screens/attente';
 import Attente2 from './screens/attente2';
+import Commande from './src/Commande';
 
 const Stack = createNativeStackNavigator();
 
@@ -85,6 +86,11 @@ function App() {
         }}
         />
         <Stack.Screen name="Map" component={Map} 
+        options={{
+          headerShown: false,
+        }}
+        />
+        <Stack.Screen name="Commande" component={Commande} 
         options={{
           headerShown: false,
         }}
