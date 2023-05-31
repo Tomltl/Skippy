@@ -191,6 +191,7 @@ const styles = StyleSheet.create({
     //     marginHorizontal: 10,
     login: {
         flexDirection: 'row',
+        marginBottom: 50,
     },
     container: {
         flex: 1,
@@ -201,6 +202,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
+        marginTop: 20
       },
       body: {
         flex: 1,

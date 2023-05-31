@@ -69,15 +69,15 @@ const Map = () => {
         longitude: 0.1631546205880212,
     };
     const festivalLocation9 = {
-        latitude: 44.48857371318083,    
-        longitude: 0.16263287419785305,
+        latitude: 44.4885910791905,              
+        longitude: 0.1622787257279417,
     };
     const festivalLocation10 = {
         latitude: 44.49131510963175,        
         longitude: 0.16495063220033077,
     };
     const festivalLocation11 = {
-        latitude: 44.49145110244573,      
+        latitude: 44.49145110244573,
         longitude: 0.16403757601753655,
     };
 
@@ -245,9 +245,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#7502BC',
         justifyContent: 'space-between',
         alignItems: 'center',
-        height: 60,
+        height: 80,
         flexDirection: 'row',
-        paddingHorizontal: 40,
+        paddingHorizontal: 70,
+        paddingBottom: 20,
         borderTopLeftRadius: 15,
         borderTopRightRadius: 15,
     },
@@ -262,8 +263,10 @@ const styles = StyleSheet.create({
         height: 30,
     },
     markerImage: {
-        width: 20,
-        backgroundColor: 'blue'
+        resizeMode: 'contain',
+        width: 30,
+        height: 30,
+        backgroundColor: 'red'
     },
     carte:{
         resizeMode: 'contain',

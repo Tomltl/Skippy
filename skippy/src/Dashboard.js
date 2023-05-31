@@ -242,7 +242,7 @@ const Dashboard = () => {
         source={require('../assets/retour.png')}
       />
       </View>
-      <View style={{flexDirection: 'row', alignItems: 'center', marginLeft: 40, marginTop: 20, justifyContent: 'space-between', paddingRight: 30, paddingBottom: 25,}}>
+      <View style={{flexDirection: 'row', alignItems: 'center', marginLeft: 40, marginTop: 20, justifyContent: 'space-between', paddingRight: 30, paddingBottom: 80,}}>
     <Image
         style={styles.flamme222}
         source={require('../assets/langue.png')}
@@ -268,7 +268,7 @@ const styles = StyleSheet.create({
     haut: {
         // marginHorizontal: 20,
         // marginRight: 50,
-        // marginTop: 50,
+        // marginTop: 80,
       },
     container2: {
         flex: 1,
@@ -285,7 +285,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         flexDirection: 'row',
         paddingBottom: 20,
-        marginTop: 50,
+        marginTop: 80,
         alignItems: 'center'
       },
       bonjour: {

@@ -17,7 +17,7 @@ const Second = () => {
         <View style={styles.haut}>
     <Pressable style= {styles.Button}>
     <Image
-        style={styles.flamme2}
+        style={styles.flamme22}
         source={require('../assets/loupe.png')}
       />
     </Pressable>
@@ -25,7 +25,7 @@ const Second = () => {
     
     <Pressable style= {styles.Button} onPress={() => navigation.navigate("Registration")}>
     <Image
-        style={styles.flamme2}
+        style={styles.flamme22}
         source={require('../assets/compte.png')}
       />
     </Pressable>
@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         flexDirection: 'row',
         marginHorizontal: 20,
-        marginTop: 40,
+        marginTop: 80,
         marginBottom: 20,
       },
     container2: {
@@ -168,13 +168,19 @@ const styles = StyleSheet.create({
         backgroundColor: '#7502BC',
         justifyContent: 'space-between',
         alignItems: 'center',
-        height: 60,
+        height: 80,
         flexDirection: 'row',
-        paddingHorizontal: 40,
+        paddingHorizontal: 70,
+        paddingBottom: 20,
         borderTopLeftRadius: 15,
         borderTopRightRadius: 15,
       },
       flamme2: {
+        resizeMode: 'contain',
+        width: 40,
+        height: 40,
+      },
+      flamme22: {
         resizeMode: 'contain',
         width: 40,
         height: 40,

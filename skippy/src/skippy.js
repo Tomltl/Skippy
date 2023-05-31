@@ -36,13 +36,35 @@ const Skippy = () => {
       />
     </Pressable>
       {/* <Text style={{fontSize: 20, color: 'white'}}>Body Part Text</Text> */}
-    
-    <Pressable style= {styles.Button} onPress={() => navigation.navigate("Registration")}>
+      {(() => {
+    if (user){
+        return (
+          <Pressable style= {styles.Button} onPress={() => navigation.navigate("Dashboard")}>
     <Image
         style={styles.flamme2}
         source={require('../assets/compte.png')}
       />
     </Pressable>
+            )
+          }
+          
+          return null;
+      })()}
+      
+      {(() => {
+    if (!user){
+        return (
+          <Pressable style= {styles.Button} onPress={() => navigation.navigate("Registration")}>
+    <Image
+        style={styles.flamme2}
+        source={require('../assets/compte.png')}
+      />
+    </Pressable>
+            )
+          }
+          
+          return null;
+      })()}
     </View>
       <View>
       <Text style={{color: 'white', fontSize: 32, fontWeight: '600', marginLeft: 25}}>Skip'Eats</Text>
@@ -197,7 +219,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         flexDirection: 'row',
         marginHorizontal: 20,
-        marginTop: 40,
+        marginTop: 80,
         marginBottom: 20,
       },
     container2: {
@@ -215,9 +237,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#7502BC',
         justifyContent: 'space-between',
         alignItems: 'center',
-        height: 60,
+        height: 80,
         flexDirection: 'row',
-        paddingHorizontal: 40,
+        paddingHorizontal: 70,
+        paddingBottom: 20,
         borderTopLeftRadius: 15,
         borderTopRightRadius: 15,
       },
@@ -337,7 +360,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginLeft: 25,
         marginTop: 20,
-        paddingBottom: 150
+        paddingBottom: 225
       },
       flamme19: {
         resizeMode: 'contain',

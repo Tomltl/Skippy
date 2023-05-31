@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
     //     marginHorizontal: 10,
     login: {
         flexDirection: 'row',
-        marginBottom: 20,
+        marginBottom: 40,
     },
     container: {
         flex: 1,
